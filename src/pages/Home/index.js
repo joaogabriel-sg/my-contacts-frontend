@@ -8,12 +8,12 @@ import arrow from '../../assets/images/icons/arrow.svg';
 import edit from '../../assets/images/icons/edit.svg';
 import trash from '../../assets/images/icons/trash.svg';
 
-import Modal from '../../components/Modal';
+import Loader from '../../components/Loader';
 
 export function Home() {
   return (
     <Container>
-      <Modal danger />
+      <Loader />
 
       <InputSearchContainer>
         <input type="text" placeholder="Pesquise pelo nome" />
