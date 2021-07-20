@@ -1,3 +1,7 @@
+import { PageHeader } from '../../components/PageHeader';
+
 export function EditContact() {
-  return 'EditContact';
+  return (
+    <PageHeader title="Editar João Gabriel" />
+  );
 }
