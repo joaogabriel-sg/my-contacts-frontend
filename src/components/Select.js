@@ -23,5 +23,6 @@ export default styled.select`
   &[disabled] {
     background: ${({ theme }) => theme.colors.gray[100]};
     border-color: ${({ theme }) => theme.colors.gray[200]};
+    opacity: 1;
   }
 `;
