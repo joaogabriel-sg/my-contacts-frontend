@@ -19,27 +19,27 @@ export const StyledButton = styled.button`
   align-items: center;
   justify-content: center;
 
-  &[disabled] {
-    background: #ccc;
-    cursor: not-allowed;
-  }
-
-  &:not(:disabled):hover {
+  &:hover {
     background: ${({ theme }) => theme.colors.primary.light};
   }
 
-  &:not(:disabled):active {
+  &:active {
     background: ${({ theme }) => theme.colors.primary.dark};
+  }
+
+  &[disabled] {
+    background: #ccc !important;
+    cursor: not-allowed !important;
   }
 
   ${({ theme, danger }) => danger && css`
     background: ${theme.colors.danger.main};
 
-    &:not(:disabled):hover {
+    &:hover {
       background: ${theme.colors.danger.light};
     }
 
-    &:not(:disabled):active {
+    &:active {
       background: ${theme.colors.danger.dark};
     }
   `}
